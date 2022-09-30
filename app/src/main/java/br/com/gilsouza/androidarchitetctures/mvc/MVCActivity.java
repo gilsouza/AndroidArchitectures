@@ -40,12 +40,7 @@ public class MVCActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<>(this, R.layout.row_layout, R.id.listText, listValues);
 
         list.setAdapter(adapter);
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MVCActivity.this, "You clicked " + listValues.get(i), Toast.LENGTH_SHORT).show();
-            }
-        });
+        list.setOnItemClickListener((adapterView, view, i, l) -> Toast.makeText(MVCActivity.this, "You clicked " + listValues.get(i), Toast.LENGTH_SHORT).show());
     }
 
     public void setValues(List<String> values) {
