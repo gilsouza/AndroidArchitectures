@@ -1,2 +1,2 @@
 # AndroidArchitectures
-Udemy course about MVC, MVVM and MVP architecture in Android.
+Udemy course [Modern Android Architectures - MVVM MVP MVC - in Java](https://www.udemy.com/course/androidarchitectures/)
